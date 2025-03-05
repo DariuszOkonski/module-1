@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Signika:wght@300..700&display=swap');
+
+//   font-family: "Signika", sans-serif;
+//   font-family: "Inconsolata", monospace;
+
+/* Variables */
+$general-primary-color: #0097e6;
+$general-secondary-color: #33d9b2;
+$general-tertiary-color: #ff5252;
+$text-primary-color: #2c2c54;
+$text-secondary-color: #fff;
+
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Inconsolata', monospace;
+  color: $text-primary-color;
+  background-color: $general-secondary-color;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: yellow;
+}
+
+section {
+  padding: 96px 0;
+}
