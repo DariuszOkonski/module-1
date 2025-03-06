@@ -74,4 +74,32 @@ section {
 
 .navigation li:hover ul {
   display: block;
+}
+
+/* Splash */
+.splash {
+  background-color: #0097e6;
+  color: #fff;
+  min-height: 500px;
+  display: flex;
+}
+.splash .splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+.splash .splash-inner h1 {
+  margin: 0;
+  font-size: 72px;
+  word-spacing: -24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.splash .splash-inner h2 {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.splash .splash-inner .page-title span {
+  font-weight: 700;
+  font-family: "Signika", sans-serif;
 }/*# sourceMappingURL=style.css.map */
