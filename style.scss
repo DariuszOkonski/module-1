@@ -9,6 +9,7 @@ $general-secondary-color: #33d9b2;
 $general-tertiary-color: #ff5252;
 $text-primary-color: #2c2c54;
 $text-secondary-color: #fff;
+$transition: all 1s;
 
 /* Global */
 *,
@@ -25,7 +26,7 @@ body {
   line-height: 1.7;
   font-family: 'Inconsolata', monospace;
   color: $text-primary-color;
-  background-color: yellow;
+  background-color: gray;
 }
 
 .container {
@@ -37,6 +38,39 @@ body {
 
 section {
   padding: 96px 0;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  transition: $transition;
+  background-position: 100% 0;
+  background-size: 300%;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color: $general-primary-color;
+}
+
+.btn-one {
+  border-color: $text-secondary-color;
+  color: $text-secondary-color;
+  background-image: linear-gradient(
+    90deg,
+    $text-secondary-color 50%,
+    transparent 50%
+  );
 }
 
 /* Navigation first level */
