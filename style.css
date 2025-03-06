@@ -15,7 +15,6 @@ body {
   line-height: 1.7;
   font-family: "Inconsolata", monospace;
   color: #2c2c54;
-  background-color: gray;
 }
 
 .container {
@@ -29,6 +28,11 @@ section {
   padding: 96px 0;
 }
 
+.header {
+  font-size: 48px;
+  margin: 0 0 72px 0;
+}
+
 .btn {
   display: inline-block;
   min-width: 160px;
@@ -39,6 +43,7 @@ section {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+  background: transparent;
   cursor: pointer;
   border-width: 2px;
   border-style: solid;
@@ -56,6 +61,16 @@ section {
   border-color: #fff;
   color: #fff;
   background-image: linear-gradient(90deg, #fff 50%, transparent 50%);
+}
+
+.btn-two {
+  border-color: #33d9b2;
+  color: #33d9b2;
+  background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%);
+}
+
+.btn-two:hover {
+  color: #fff;
 }
 
 /* Navigation first level */
@@ -131,4 +146,35 @@ section {
 .splash .splash-inner .page-title span {
   font-weight: 700;
   font-family: "Signika", sans-serif;
+}
+
+/* Our Services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 0 0 33.333%;
+  position: relative;
+  padding: 0 10px;
+}
+.service-item__number {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 144px;
+  line-height: 1;
+  z-index: 0;
+  font-weight: bold;
+  color: #33d9b2;
+  font-family: "Signika", sans-serif;
+  opacity: 0.2;
+}
+.service-item__header {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+.service-item__subheader {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

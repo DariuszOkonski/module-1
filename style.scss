@@ -26,7 +26,7 @@ body {
   line-height: 1.7;
   font-family: 'Inconsolata', monospace;
   color: $text-primary-color;
-  background-color: gray;
+  // background-color: gray;
 }
 
 .container {
@@ -40,6 +40,11 @@ section {
   padding: 96px 0;
 }
 
+.header {
+  font-size: 48px;
+  margin: 0 0 72px 0;
+}
+
 .btn {
   display: inline-block;
   min-width: 160px;
@@ -50,6 +55,7 @@ section {
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+  background: transparent;
   cursor: pointer;
   border-width: 2px;
   border-style: solid;
@@ -71,6 +77,20 @@ section {
     $text-secondary-color 50%,
     transparent 50%
   );
+}
+
+.btn-two {
+  border-color: $general-secondary-color;
+  color: $general-secondary-color;
+  background-image: linear-gradient(
+    90deg,
+    $general-secondary-color 50%,
+    transparent 50%
+  );
+}
+
+.btn-two:hover {
+  color: $text-secondary-color;
 }
 
 /* Navigation first level */
@@ -158,5 +178,39 @@ section {
         font-family: 'Signika', sans-serif;
       }
     }
+  }
+}
+
+/* Our Services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  flex: 0 0 33.333%;
+  position: relative;
+  padding: 0 10px;
+
+  &__number {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 144px;
+    line-height: 1;
+    z-index: 0;
+    font-weight: bold;
+    color: $general-secondary-color;
+    font-family: 'Signika', sans-serif;
+    opacity: 0.2;
+  }
+
+  &__header {
+    font-size: 24px;
+    margin: 0 0 12px 0;
+  }
+
+  &__subheader {
+    font-weight: 700;
   }
 }
