@@ -449,6 +449,14 @@ section {
     flex-direction: column;
   }
 
+  .service-item {
+    margin-bottom: 32px;
+  }
+
+  .service-item:last-child {
+    margin-bottom: 0;
+  }
+
   /* Our work */
   .our-work {
     display: flex;
