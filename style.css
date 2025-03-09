@@ -331,6 +331,10 @@ section {
   align-items: center;
   justify-content: center;
   margin: 0 8px;
+  transition: all 1s;
+}
+.footer .media li:hover {
+  transform: scale(1.2);
 }
 .footer .media a {
   color: #fff;

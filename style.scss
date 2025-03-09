@@ -377,6 +377,11 @@ section {
       align-items: center;
       justify-content: center;
       margin: 0 8px;
+      transition: $transition;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
 
     a {
