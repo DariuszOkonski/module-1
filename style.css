@@ -69,7 +69,21 @@ section {
   background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%);
 }
 
-.btn-two:hover {
+.btn-three {
+  border-color: #ff5252;
+  color: #ff5252;
+  background-image: linear-gradient(90deg, #ff5252 50%, transparent 50%);
+}
+
+.btn-four {
+  border-color: #0097e6;
+  color: #0097e6;
+  background-image: linear-gradient(90deg, #0097e6 50%, transparent 50%);
+}
+
+.btn-two:hover,
+.btn-three:hover,
+.btn-four:hover {
   color: #fff;
 }
 
