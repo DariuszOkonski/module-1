@@ -28,6 +28,11 @@ section {
   padding: 96px 0;
 }
 
+.bg-primary {
+  background-color: #0097e6;
+  color: #fff;
+}
+
 .header {
   font-size: 48px;
   margin: 0 0 72px 0;
@@ -253,4 +258,50 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  gap: 6px;
+}
+
+.contact-form {
+  flex: 0 0 65%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+}
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #fff;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form label {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Inconsolata", monospace;
+}
+.contact-form label {
+  padding: 0;
+  padding-left: 10px;
+}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact-info {
+  flex: 0 0 35%;
+  background-color: blue;
 }/*# sourceMappingURL=style.css.map */
