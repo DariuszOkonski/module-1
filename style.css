@@ -286,10 +286,7 @@ section {
   font-size: 18px;
   font-weight: 300;
   font-family: "Inconsolata", monospace;
-}
-.contact-form label {
-  padding: 0;
-  padding-left: 10px;
+  outline: none;
 }
 .contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
   color: #fff;
@@ -303,5 +300,9 @@ section {
 
 .contact-info {
   flex: 0 0 35%;
-  background-color: blue;
+}
+.contact-info__item {
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -334,11 +334,7 @@ section {
     font-size: 18px;
     font-weight: 300;
     font-family: 'Inconsolata', monospace;
-  }
-
-  label {
-    padding: 0;
-    padding-left: 10px;
+    outline: none;
   }
 
   input::placeholder,
@@ -350,5 +346,9 @@ section {
 
 .contact-info {
   flex: 0 0 35%;
-  background-color: blue;
+  &__item {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
 }
