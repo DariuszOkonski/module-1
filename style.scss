@@ -45,6 +45,15 @@ section {
   margin: 0 0 72px 0;
 }
 
+.item-header {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
 .btn {
   display: inline-block;
   min-width: 160px;
@@ -107,6 +116,14 @@ section {
     $general-primary-color 50%,
     transparent 50%
   );
+}
+
+.btn-five {
+  border: none;
+  margin: 36px 0;
+  padding: 0;
+  text-align: left;
+  color: $general-primary-color;
 }
 
 .btn-two:hover,
@@ -226,13 +243,55 @@ section {
     font-family: 'Signika', sans-serif;
     opacity: 0.2;
   }
+}
 
-  &__header {
-    font-size: 24px;
-    margin: 0 0 12px 0;
+/* Our work */
+.our-work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-work-item {
+  flex: 0 0 50%;
+  display: flex;
+  min-height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  &__image {
+    flex-basis: 50%;
+    width: 100%;
+    max-width: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $general-secondary-color;
+      opacity: 0.3;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  &__subheader {
-    font-weight: 700;
+  &__content {
+    flex-basis: 50%;
+    padding: 40px 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
