@@ -277,6 +277,12 @@ section {
       height: 100%;
       background-color: $general-secondary-color;
       opacity: 0.3;
+      transition: $transition;
+    }
+
+    &:hover::after {
+      top: 0;
+      left: 0;
     }
 
     img {
